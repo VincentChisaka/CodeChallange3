@@ -19,7 +19,7 @@ function fetchData() {
     let button = document.createElement("button");
     button.id = "btn";
     button.textContent = "Buy Ticket";
-    let total = first.capacity - first.tickets_sold;
+    let total = first.capacity - first.tickets.sold;
     button.addEventListener("click", () => {
       if (total > 0) {
         total -= 1;
