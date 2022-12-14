@@ -1,5 +1,5 @@
 function fetchData() {
-    fetch("http://localhost:3000/films")
+    fetch("https://vincentchisaka.github.io/json-data/db.json")
       .then((response) => response.json())
       .then((data) => appendFirstMovie(data));
   }
